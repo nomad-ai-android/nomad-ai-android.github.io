@@ -20,63 +20,65 @@
     <link rel="apple-touch-icon" href="icon.png" />
     <link rel="stylesheet" href="style.css" />
 
-    <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
       <defs>
         <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/>
-          <path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/>
+          <circle cx="9" cy="12" r=".6" fill="currentColor" stroke="none"/>
+          <circle cx="12" cy="12" r=".6" fill="currentColor" stroke="none"/>
+          <circle cx="15" cy="12" r=".6" fill="currentColor" stroke="none"/>
         </symbol>
         <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/>
-          <circle cx="12" cy="13" r="4"/>
+          <path d="M4 8h3l1.6-2.4A1 1 0 0 1 9.4 5h5.2a1 1 0 0 1 .8.6L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/>
+          <circle cx="12" cy="13" r="3.6"/>
         </symbol>
         <symbol id="i-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M3 7a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v1h2a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>
-          <path d="M17 13h2"/>
+          <path d="M3 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1"/>
+          <path d="M21 10v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8"/>
+          <circle cx="17" cy="14" r="1.2" fill="currentColor" stroke="none"/>
         </symbol>
         <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="9"/>
           <path d="M3 12h18"/>
-          <path d="M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21"/>
-          <path d="M12 3C9.5 5.7 8.2 8.8 8.2 12s1.3 6.3 3.8 9"/>
+          <path d="M12 3c2.8 2.7 4.2 5.8 4.2 9S14.8 18.3 12 21"/>
+          <path d="M12 3C9.2 5.7 7.8 8.8 7.8 12s1.4 6.3 4.2 9"/>
         </symbol>
         <symbol id="i-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="8" cy="9" r="3"/>
-          <circle cx="17" cy="10" r="2.5"/>
-          <path d="M2.5 19c0-2.8 2.5-5 5.5-5s5.5 2.2 5.5 5"/>
-          <path d="M14 18.5c.3-1.7 2-3 4-3s3.5 1.3 3.5 3"/>
+          <circle cx="9" cy="8.5" r="3.2"/>
+          <circle cx="17" cy="9.5" r="2.4"/>
+          <path d="M2.8 19c.4-2.7 3-4.8 6.2-4.8s5.8 2.1 6.2 4.8"/>
+          <path d="M15.5 18.2c.5-1.7 2.2-2.9 4-2.9 1.9 0 3.3 1.2 3.7 2.9"/>
         </symbol>
         <symbol id="i-exchange" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 8h13l-3-3"/>
-          <path d="M20 16H7l3 3"/>
+          <path d="M4 8h13"/>
+          <path d="m14 5 3 3-3 3"/>
+          <path d="M20 16H7"/>
+          <path d="m10 13-3 3 3 3"/>
         </symbol>
         <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 3 4 6v6c0 4.8 3.2 8.5 8 9 4.8-.5 8-4.2 8-9V6l-8-3Z"/>
+          <path d="M12 3 4 6v6c0 4.8 3.2 8.4 8 9 4.8-.6 8-4.2 8-9V6l-8-3Z"/>
           <path d="m9 12 2 2 4-4"/>
         </symbol>
         <symbol id="i-signal-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
           <path d="M2 8.8C5 6 8.4 4.5 12 4.5c3.6 0 7 1.5 10 4.3"/>
-          <path d="M5 12.3c2-1.8 4.4-2.8 7-2.8 1.2 0 2.3.2 3.3.6"/>
+          <path d="M5 12.3c2-1.8 4.4-2.8 7-2.8 1.1 0 2.2.2 3.2.5"/>
           <path d="M8.5 15.7c1-.8 2.2-1.2 3.5-1.2"/>
-          <circle cx="12" cy="19" r="1"/>
+          <circle cx="12" cy="19" r=".9" fill="currentColor" stroke="none"/>
           <path d="m3 3 18 18"/>
         </symbol>
-        <symbol id="i-plane" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="m3 15 3.5-1 4 4 2-1-1-5 4.5-2 2.5 2.5 2-.5-1-3 2-2c1-1 1-2 0-3s-2-1-3 0l-2 2-3-1-.5 2L13.5 9l-5 4.5-5-1L3 15Z"/>
-        </symbol>
-        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
           <path d="m4 12 5 5L20 6"/>
         </symbol>
-        <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M4 7h16M4 12h16M4 17h16"/>
         </symbol>
         <symbol id="i-translate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
           <path d="M3 6h11"/>
           <path d="M8.5 3v3"/>
-          <path d="M12 14c-3 0-8-2-8-7"/>
-          <path d="M4 14c3 0 8-2 8-7"/>
+          <path d="M11.5 6c0 5-3.8 8-7.5 8"/>
+          <path d="M5 9c0 2.8 3.2 4.5 6 5"/>
           <path d="m13 21 4-9 4 9"/>
-          <path d="M14.5 17h5"/>
+          <path d="M14.5 17.5h5"/>
         </symbol>
         <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="3"/>
@@ -87,27 +89,30 @@
           <path d="M5 11a7 7 0 0 0 14 0"/>
           <path d="M12 18v3"/>
         </symbol>
-        <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+        <symbol id="i-send" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14"/>
           <path d="m13 6 6 6-6 6"/>
         </symbol>
-        <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <symbol id="i-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
           <path d="M12 5v14M5 12h14"/>
         </symbol>
         <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 4v12"/>
+          <path d="M12 3v13"/>
           <path d="m7 11 5 5 5-5"/>
-          <path d="M4 20h16"/>
+          <path d="M4 21h16"/>
+        </symbol>
+        <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="m6 6 12 12M18 6 6 18"/>
         </symbol>
         <symbol id="i-play" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M5 3.5v17c0 .8.8 1.2 1.5.8l14-8.5c.7-.4.7-1.4 0-1.8l-14-8.5C5.8 2.3 5 2.7 5 3.5Z"/>
+          <path d="M6 4.2v15.6c0 .8.9 1.3 1.6.9l13.4-7.8c.6-.4.6-1.4 0-1.8L7.6 3.3c-.7-.4-1.6.1-1.6.9Z"/>
         </symbol>
         <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.9-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/>
         </symbol>
-        <symbol id="i-sparkle" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M12 3v4M12 17v4M3 12h4M17 12h4"/>
-          <path d="m6 6 2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"/>
+          <path d="m13 5 7 7-7 7"/>
         </symbol>
       </defs>
     </svg>
@@ -116,7 +121,7 @@
     <header class="site-header">
       <div class="container">
         <a class="brand" href="#top">
-          <img class="brand-mark" src="icon.png" alt="NOMAD AI" width="36" height="36" />
+          <img class="brand-mark" src="icon.png" alt="NOMAD AI" width="32" height="32" />
           NOMAD AI
         </a>
         <nav class="nav">
@@ -125,7 +130,7 @@
           <a href="#models">모델</a>
           <a href="#privacy">프라이버시</a>
           <a href="#faq">FAQ</a>
-          <a class="btn btn-primary" href="#download">앱 다운로드</a>
+          <a class="btn btn-primary btn-sm" href="#download">앱 다운로드</a>
         </nav>
       </div>
     </header>
@@ -145,74 +150,109 @@
             </h1>
             <p class="lead">
               비행기 안, 산속 마을, 데이터가 터지지 않는 해외 골목에서도 작동하는
-              안드로이드 온디바이스 LLM 챗봇. 메뉴판을 찍으면 번역되고, 대화 내용을
-              통해 경비가 자동으로 정리됩니다.
+              안드로이드 온디바이스 LLM 챗봇. 메뉴판을 찍으면 번역되고, 대화 내용에서
+              경비가 자동으로 정리됩니다.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#download">
-                <svg class="ic"><use href="#i-play"/></svg>
+                <svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg>
                 Google Play 에서 받기
               </a>
-              <a class="btn btn-secondary" href="#features">기능 살펴보기</a>
+              <a class="btn btn-secondary" href="#features">
+                기능 살펴보기
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
             </div>
-            <div class="hero-meta">
-              <span><svg class="ic"><use href="#i-globe"/></svg> 40+ 개 언어 지원</span>
-              <span><svg class="ic"><use href="#i-shield"/></svg> 기기 내 처리, 데이터 전송 없음</span>
-              <span><svg class="ic"><use href="#i-signal-off"/></svg> 완전 오프라인 동작</span>
-            </div>
+            <ul class="hero-meta">
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-globe"/></svg>
+                40+ 개 언어 지원
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-shield"/></svg>
+                기기 내 처리, 데이터 전송 없음
+              </li>
+              <li>
+                <svg width="16" height="16" aria-hidden="true"><use href="#i-signal-off"/></svg>
+                완전 오프라인 동작
+              </li>
+            </ul>
           </div>
 
-          <div class="phone" aria-hidden="true">
-            <div class="phone-screen">
-              <div class="app-bar">
-                <svg class="app-ic"><use href="#i-menu"/></svg>
-                <div class="app-title">
-                  <strong>NOMAD AI</strong>
-                  <span>온디바이스 · 온라인</span>
+          <div class="phone-wrap" aria-hidden="true">
+            <div class="phone-glow"></div>
+            <div class="phone">
+              <span class="phone-camera"></span>
+              <div class="phone-screen">
+                <div class="status-bar">
+                  <span>1:14</span>
+                  <span class="status-right">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M2 17h2v5H2zM7 14h2v8H7zM12 10h2v12h-2zM17 5h2v17h-2z"/></svg>
+                    <svg width="11" height="8" viewBox="0 0 24 16" fill="currentColor"><rect x="1" y="2" width="20" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="22" y="6" width="1.5" height="4" fill="currentColor"/><rect x="3" y="4" width="16" height="8" rx="1"/></svg>
+                  </span>
                 </div>
-                <svg class="app-ic"><use href="#i-translate"/></svg>
-                <svg class="app-ic"><use href="#i-settings"/></svg>
-              </div>
 
-              <div class="chat">
-                <div class="chat-row bot">
-                  <img class="avatar" src="icon.png" alt="" />
-                  <div class="chat-bubble bot">
-                    김치찌개는 한국의 대표적인 찌개 요리입니다. 돼지고기와 김치를
-                    푹 끓여 얼큰하고 진한 국물 맛이 일품이에요.
+                <div class="app-bar">
+                  <button class="app-ic-btn" type="button">
+                    <svg width="18" height="18" aria-hidden="true"><use href="#i-menu"/></svg>
+                  </button>
+                  <div class="app-title">
+                    <strong>NOMAD AI</strong>
+                    <span>온디바이스 · 온라인</span>
+                  </div>
+                  <button class="app-ic-btn" type="button">
+                    <svg width="16" height="16" aria-hidden="true"><use href="#i-translate"/></svg>
+                  </button>
+                  <button class="app-ic-btn" type="button">
+                    <svg width="16" height="16" aria-hidden="true"><use href="#i-settings"/></svg>
+                  </button>
+                </div>
+
+                <div class="chat">
+                  <div class="chat-row bot">
+                    <img class="avatar" src="icon.png" alt="" width="22" height="22" />
+                    <div class="chat-bubble bot">
+                      안녕하세요, 여행을 도와드릴게요. 어디에 계신가요?
+                    </div>
+                  </div>
+
+                  <div class="chat-row user">
+                    <div class="chat-bubble user">파리에서 저녁 먹을 곳 추천해줘</div>
+                  </div>
+
+                  <div class="chat-row bot">
+                    <img class="avatar" src="icon.png" alt="" width="22" height="22" />
+                    <div class="chat-bubble bot">
+                      몽마르트 근처의 비스트로를 추천드려요. 현지 시간 오후 7시,
+                      지금 이동하면 딱 좋아요.
+                    </div>
+                  </div>
+
+                  <div class="chat-row user">
+                    <div class="chat-bubble user">이 메뉴 번역해줘</div>
+                  </div>
+
+                  <div class="chat-row bot">
+                    <img class="avatar" src="icon.png" alt="" width="22" height="22" />
+                    <div class="chat-bubble bot">
+                      Coq au Vin — 레드 와인에 졸인 프랑스식 닭 요리예요.
+                      <span class="chat-tag">메뉴 번역</span>
+                    </div>
                   </div>
                 </div>
 
-                <div class="chat-row user">
-                  <div class="chat-bubble user">베트남 사람과 대화하고 싶어</div>
+                <div class="input-bar">
+                  <button class="input-btn ghost" type="button">
+                    <svg width="14" height="14" aria-hidden="true"><use href="#i-plus"/></svg>
+                  </button>
+                  <span class="input-placeholder">메시지 입력…</span>
+                  <button class="input-btn ghost" type="button">
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-mic"/></svg>
+                  </button>
+                  <button class="input-btn send" type="button">
+                    <svg width="13" height="13" aria-hidden="true"><use href="#i-send"/></svg>
+                  </button>
                 </div>
-
-                <div class="chat-row bot">
-                  <img class="avatar" src="icon.png" alt="" />
-                  <div class="chat-bubble bot">
-                    베트남 사람과 대화하고 싶으시군요. 통역 모드를 켜드릴까요?
-                    <div class="tag">번역</div>
-                  </div>
-                </div>
-
-                <div class="chat-row user">
-                  <div class="chat-bubble user">베트남 사람과 실시간으로 대화하려고 해</div>
-                </div>
-
-                <div class="chat-row bot">
-                  <img class="avatar" src="icon.png" alt="" />
-                  <div class="chat-bubble bot">
-                    통역 모드를 켜드릴게요.
-                    <div class="tag">대면 통역</div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="input-bar">
-                <button class="input-btn" type="button"><svg class="ic"><use href="#i-plus"/></svg></button>
-                <span class="input-placeholder">메시지 입력…</span>
-                <button class="input-btn" type="button"><svg class="ic"><use href="#i-mic"/></svg></button>
-                <button class="input-btn send" type="button"><svg class="ic"><use href="#i-send"/></svg></button>
               </div>
             </div>
           </div>
@@ -231,59 +271,71 @@
           </div>
 
           <div class="features">
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-chat"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-chat"/></svg>
+              </div>
               <h3>오프라인 AI 대화</h3>
               <p>
                 네트워크 없이도 현지 음식, 길 찾기, 문화 팁까지 묻고 답할 수
                 있습니다. 모델은 기기에서 직접 실행됩니다.
               </p>
-            </div>
+            </article>
 
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-camera"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-camera"/></svg>
+              </div>
               <h3>메뉴 OCR & 번역</h3>
               <p>
                 카메라로 메뉴판을 찍으면 텍스트를 인식해 한국어, 영어, 중국어,
                 일본어로 바로 해석해 드립니다.
               </p>
-            </div>
+            </article>
 
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-wallet"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-wallet"/></svg>
+              </div>
               <h3>경비 자동 기록</h3>
               <p>
                 대화 중 등장한 지출을 AI가 자동으로 감지해 통화와 카테고리별로
                 정리해 줍니다.
               </p>
-            </div>
+            </article>
 
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-globe"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-globe"/></svg>
+              </div>
               <h3>실시간 번역</h3>
               <p>
                 40개 이상의 언어를 지원하며, 스트리밍 방식으로 타이핑되듯
                 자연스럽게 번역 결과를 보여줍니다.
               </p>
-            </div>
+            </article>
 
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-people"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-people"/></svg>
+              </div>
               <h3>대면 통역 모드</h3>
               <p>
                 화면을 위아래로 나눠 서로 다른 언어를 쓰는 두 사람이 얼굴을
                 맞대고 대화할 수 있도록 돕습니다.
               </p>
-            </div>
+            </article>
 
-            <div class="feature">
-              <div class="feature-icon"><svg><use href="#i-exchange"/></svg></div>
+            <article class="feature">
+              <div class="feature-icon">
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-exchange"/></svg>
+              </div>
               <h3>환율 & 현지 시간</h3>
               <p>
                 실시간 환율 변환과 현지 시간 조회를 제공합니다. 네트워크가 없을
                 때도 대략적인 환율을 안내합니다.
               </p>
-            </div>
+            </article>
           </div>
         </div>
       </section>
@@ -296,24 +348,24 @@
             <p>처음 한 번만 설정하면, 이후에는 완전히 오프라인으로 사용할 수 있어요.</p>
           </div>
 
-          <div class="steps">
-            <div class="step">
+          <ol class="steps">
+            <li class="step">
               <h3>앱 다운로드</h3>
               <p>Google Play 에서 NOMAD AI 를 설치합니다. 약 30MB 크기의 가벼운 앱입니다.</p>
-            </div>
-            <div class="step">
+            </li>
+            <li class="step">
               <h3>모델 선택 & 다운로드</h3>
               <p>Gemma 4 2B 또는 4B 모델을 한 번만 다운로드하면 준비 완료입니다.</p>
-            </div>
-            <div class="step">
+            </li>
+            <li class="step">
               <h3>비행기 모드 OK</h3>
               <p>이후에는 인터넷 연결 없이도 모든 AI 기능을 사용할 수 있습니다.</p>
-            </div>
-            <div class="step">
+            </li>
+            <li class="step">
               <h3>편하게 여행하기</h3>
               <p>메뉴 촬영, 통역, 경비 기록까지 — 필요한 순간에 바로 꺼내 쓰세요.</p>
-            </div>
-          </div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -329,28 +381,52 @@
           </div>
 
           <div class="models">
-            <div class="model featured">
+            <article class="model featured">
               <span class="badge">권장</span>
               <h3>Gemma 4 · 2B</h3>
               <div class="size">용량 2.4 GB · 권장 RAM 4 GB</div>
-              <ul>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 빠른 응답 속도와 낮은 배터리 소모</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 대부분의 안드로이드 기기에 최적</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 여행 대화, 번역, 경비 기록에 충분</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 저장 공간 부담 최소</li>
+              <ul class="model-list">
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  빠른 응답 속도와 낮은 배터리 소모
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  대부분의 안드로이드 기기에 최적
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  여행 대화, 번역, 경비 기록에 충분
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  저장 공간 부담 최소
+                </li>
               </ul>
-            </div>
+            </article>
 
-            <div class="model">
+            <article class="model">
               <h3>Gemma 4 · 4B</h3>
               <div class="size">용량 3.4 GB · 권장 RAM 6 GB+</div>
-              <ul>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 더 자연스러운 대화 품질</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 복잡한 질의도 정확하게 처리</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 고성능 기기에서 최상의 경험</li>
-                <li><svg class="ic check"><use href="#i-check"/></svg> 장기간 여행·업무용 선택지</li>
+              <ul class="model-list">
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  더 자연스러운 대화 품질
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  복잡한 질의도 정확하게 처리
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  고성능 기기에서 최상의 경험
+                </li>
+                <li>
+                  <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
+                  장기간 여행·업무용 선택지
+                </li>
               </ul>
-            </div>
+            </article>
           </div>
 
           <p class="models-note">
@@ -373,42 +449,54 @@
           <div class="privacy-card">
             <div class="privacy-grid">
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>온디바이스 처리</h4>
                   <p>대화, 번역, OCR 결과 모두 기기 내부에서만 처리됩니다.</p>
                 </div>
               </div>
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>채팅 기록은 로컬에만</h4>
                   <p>기기 내부 저장소에만 저장되며, 앱 삭제 시 함께 제거됩니다.</p>
                 </div>
               </div>
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>카메라 이미지는 저장되지 않음</h4>
                   <p>메뉴 인식을 위해 순간적으로 처리될 뿐 별도 저장되지 않습니다.</p>
                 </div>
               </div>
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>네트워크는 최소한으로</h4>
                   <p>모델 다운로드와 환율 조회에만 인터넷을 사용합니다.</p>
                 </div>
               </div>
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>광고 SDK 없음</h4>
                   <p>제3자 추적, 광고, 분석 SDK 를 포함하지 않습니다.</p>
                 </div>
               </div>
               <div class="privacy-item">
-                <span class="icon"><svg><use href="#i-check"/></svg></span>
+                <span class="privacy-ic">
+                  <svg width="14" height="14" aria-hidden="true"><use href="#i-check"/></svg>
+                </span>
                 <div>
                   <h4>계정 가입 불필요</h4>
                   <p>회원가입이나 로그인 없이 바로 사용할 수 있습니다.</p>
@@ -417,7 +505,10 @@
             </div>
 
             <div class="privacy-cta">
-              <a class="btn btn-secondary" href="privacy.html">개인정보처리방침 전문 보기</a>
+              <a class="btn btn-secondary" href="privacy.html">
+                개인정보처리방침 전문 보기
+                <svg width="14" height="14" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+              </a>
             </div>
           </div>
         </div>
@@ -481,16 +572,16 @@
       <!-- CTA -->
       <section id="download" class="download-section">
         <div class="cta">
-          <img class="cta-icon" src="icon.png" alt="" width="64" height="64" />
+          <img class="cta-icon" src="icon.png" alt="" width="72" height="72" />
           <h2>이제 인터넷 걱정 없이 떠나요</h2>
           <p>Google Play 에서 NOMAD AI 를 만나보세요.</p>
           <div class="cta-actions">
             <a class="btn btn-primary" href="#" aria-disabled="true">
-              <svg class="ic"><use href="#i-play"/></svg>
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-play"/></svg>
               Google Play 에서 받기
             </a>
             <a class="btn btn-secondary" href="https://github.com/nomad-ai-android/nomad-app" target="_blank" rel="noopener">
-              <svg class="ic"><use href="#i-github"/></svg>
+              <svg width="18" height="18" aria-hidden="true"><use href="#i-github"/></svg>
               GitHub 저장소 보기
             </a>
           </div>
@@ -500,7 +591,10 @@
 
     <footer class="site-footer">
       <div class="container">
-        <div>© 2026 NOMAD AI. 개인 및 교육 용도로 제공됩니다.</div>
+        <div class="footer-brand">
+          <img src="icon.png" alt="" width="24" height="24" />
+          <span>© 2026 NOMAD AI. 개인 및 교육 용도로 제공됩니다.</span>
+        </div>
         <div class="footer-links">
           <a href="privacy.html">개인정보처리방침</a>
           <a href="terms.html">이용약관</a>
