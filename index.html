@@ -6,13 +6,13 @@
     <title>NOMAD AI — 오프라인 여행 AI 도우미</title>
     <meta
       name="description"
-      content="인터넷 없이도 작동하는 안드로이드 온디바이스 LLM 여행 챗봇. 메뉴판 번역, 실시간 통역, 경비 자동 기록, 40개 이상의 언어 지원."
+      content="인터넷 없이도 작동하는 안드로이드 온디바이스 LLM 여행 챗봇. 메뉴판 번역, 실시간 통역, 음성 모드, 40개 이상의 언어 지원."
     />
     <meta name="theme-color" content="#0d0920" />
     <meta property="og:title" content="NOMAD AI — 오프라인 여행 AI 도우미" />
     <meta
       property="og:description"
-      content="기기에서 바로 실행되는 프라이빗한 여행 AI. 오프라인 대화, 메뉴 OCR, 실시간 통역, 경비 관리까지."
+      content="기기에서 바로 실행되는 프라이빗한 여행 AI. 오프라인 대화, 메뉴 OCR, 실시간 통역, 음성 응답까지."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="icon.png" />
@@ -150,8 +150,8 @@
             </h1>
             <p class="lead">
               비행기 안, 산속 마을, 데이터가 터지지 않는 해외 골목에서도 작동하는
-              안드로이드 온디바이스 LLM 챗봇. 메뉴판을 찍으면 번역되고, 대화 내용에서
-              경비가 자동으로 정리됩니다.
+              안드로이드 온디바이스 LLM 챗봇. 메뉴판을 찍으면 번역되고, AI 답변은
+              자연스러운 음성으로도 들을 수 있습니다.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#download">
@@ -241,14 +241,14 @@
                   </div>
 
                   <div class="chat-row user">
-                    <div class="chat-bubble user">오늘 얼마나 썼어?</div>
+                    <div class="chat-bubble user">방금 답변을 음성으로 들려줘</div>
                   </div>
 
                   <div class="chat-row bot">
                     <img class="avatar" src="icon.png" alt="" width="22" height="22" />
                     <div class="chat-bubble bot">
-                      오늘 총 78,400원 지출. 식비 52%, 교통 28%.
-                      <span class="chat-tag">경비 요약</span>
+                      좋아요. Supertonic 3 음성으로 바로 재생할게요.
+                      <span class="chat-tag">음성 모드</span>
                     </div>
                   </div>
 
@@ -289,7 +289,7 @@
           <div class="section-head reveal">
             <h2>여행의 모든 순간에 필요한 AI 기능</h2>
             <p>
-              대화, 번역, 통역, 경비 관리까지. 여행자가 가장 자주 마주치는
+              대화, 번역, 통역, 음성 응답까지. 여행자가 가장 자주 마주치는
               상황을 위해 설계된 기능들을 만나보세요.
             </p>
           </div>
@@ -319,12 +319,12 @@
 
             <article class="feature reveal">
               <div class="feature-icon">
-                <svg width="22" height="22" aria-hidden="true"><use href="#i-wallet"/></svg>
+                <svg width="22" height="22" aria-hidden="true"><use href="#i-mic"/></svg>
               </div>
-              <h3>경비 자동 기록</h3>
+              <h3>음성 모드</h3>
               <p>
-                대화 중 등장한 지출을 AI가 자동으로 감지해 통화와 카테고리별로
-                정리해 줍니다.
+                AI와 대화한 내용을 화면으로 확인하고, 필요한 순간에는 TTS로
+                자연스럽게 응답을 들을 수 있습니다.
               </p>
             </article>
 
@@ -379,7 +379,7 @@
             </li>
             <li class="step reveal">
               <h3>모델 선택 & 다운로드</h3>
-              <p>Gemma 4 2B 또는 4B 모델을 한 번만 다운로드하면 준비 완료입니다.</p>
+              <p>Gemma 4 2B 또는 4B와 Supertonic 3 모델을 한 번만 다운로드하면 준비 완료입니다.</p>
             </li>
             <li class="step reveal">
               <h3>비행기 모드 OK</h3>
@@ -387,7 +387,7 @@
             </li>
             <li class="step reveal">
               <h3>편하게 여행하기</h3>
-              <p>메뉴 촬영, 통역, 경비 기록까지 — 필요한 순간에 바로 꺼내 쓰세요.</p>
+              <p>메뉴 촬영, 통역, 음성 응답까지 — 필요한 순간에 바로 꺼내 쓰세요.</p>
             </li>
           </ol>
         </div>
@@ -420,7 +420,7 @@
                 </li>
                 <li>
                   <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
-                  여행 대화, 번역, 경비 기록에 충분
+                  여행 대화, 번역, 음성 모드에 충분
                 </li>
                 <li>
                   <span class="tick"><svg width="12" height="12" aria-hidden="true"><use href="#i-check"/></svg></span>
@@ -454,6 +454,7 @@
           </div>
 
           <p class="models-note">
+            AI 대화는 Gemma 4, TTS 음성 응답은 Supertonic 3 기반으로 기기에서 실행됩니다.
             최소 시스템 요구사항: Android 9 (API 28) 이상, RAM 4 GB 이상, 저장 공간 3.5 GB 여유
           </p>
         </div>
